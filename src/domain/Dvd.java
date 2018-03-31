@@ -8,5 +8,19 @@ package domain;
 
 public class Dvd extends Elemento{
     
+    private String director;
+    
+    public Dvd(){
+        
+    }
+    
+    public Dvd(String director){
+        super();
+        this.director = director;   
+    }
+
+    public String getDirector() {
+        return director;
+    }
     
 }
