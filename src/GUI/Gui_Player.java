@@ -33,6 +33,7 @@ public class Gui_Player extends javax.swing.JFrame {
         initComponents();
         setTitle("Reproductor de Musica En Java "); //Cambia el nombre al la ventana
         setLocationRelativeTo(null); //centra la ventana en el medio de la pantalla
+        
     }
 
     /**

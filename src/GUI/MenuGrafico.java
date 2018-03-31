@@ -40,6 +40,8 @@ public class MenuGrafico extends javax.swing.JFrame {
 
         btnSalir = new javax.swing.JButton();
         btnMusicaLocal = new javax.swing.JButton();
+        btnLoguearse = new javax.swing.JButton();
+        btnRegistrarse = new javax.swing.JButton();
         jLabelFondo = new javax.swing.JLabel();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -59,7 +61,7 @@ public class MenuGrafico extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, -1, -1));
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 130, -1));
 
         btnMusicaLocal.setText("Musica Local");
         btnMusicaLocal.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +69,18 @@ public class MenuGrafico extends javax.swing.JFrame {
                 btnMusicaLocalActionPerformed(evt);
             }
         });
-        getContentPane().add(btnMusicaLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
+        getContentPane().add(btnMusicaLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        btnLoguearse.setText("Login");
+        btnLoguearse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoguearseActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLoguearse, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 90, -1));
+
+        btnRegistrarse.setText("Registrarse");
+        getContentPane().add(btnRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 90, -1));
 
         jLabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/supermanFondo.jpg"))); // NOI18N
         jLabelFondo.setAutoscrolls(true);
@@ -102,6 +115,11 @@ public class MenuGrafico extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void btnLoguearseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoguearseActionPerformed
+        loginGrafico logGraf = new loginGrafico();
+        logGraf.setVisible(true);
+    }//GEN-LAST:event_btnLoguearseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,7 +158,9 @@ public class MenuGrafico extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnLoguearse;
     private javax.swing.JButton btnMusicaLocal;
+    private javax.swing.JButton btnRegistrarse;
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabelFondo;
     private javax.swing.JMenu jMenu1;
