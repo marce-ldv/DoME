@@ -5,12 +5,15 @@
  */
 package app;
 
+import GUI.MenuGrafico;
+
 
 public class Main {
     
     public static void main(String[] args) {
         
-        
+        MenuGrafico menuGui = new MenuGrafico();
+        menuGui.setVisible(true);
         
     }
     
