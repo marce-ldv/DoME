@@ -41,10 +41,9 @@ public class MenuGrafico extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         btnMusicaLocal = new javax.swing.JButton();
         jLabelFondo = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenuBarPrincipal = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImage(getIconImage());
@@ -60,7 +59,7 @@ public class MenuGrafico extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 520, -1, -1));
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, -1, -1));
 
         btnMusicaLocal.setText("Musica Local");
         btnMusicaLocal.addActionListener(new java.awt.event.ActionListener() {
@@ -68,11 +67,11 @@ public class MenuGrafico extends javax.swing.JFrame {
                 btnMusicaLocalActionPerformed(evt);
             }
         });
-        getContentPane().add(btnMusicaLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, -1, -1));
+        getContentPane().add(btnMusicaLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
 
         jLabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/supermanFondo.jpg"))); // NOI18N
         jLabelFondo.setAutoscrolls(true);
-        getContentPane().add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1121, 960));
+        getContentPane().add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 960));
 
         jMenu1.setText("File");
 
@@ -84,12 +83,9 @@ public class MenuGrafico extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBarPrincipal.add(jMenu1);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBarPrincipal);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -148,8 +144,7 @@ public class MenuGrafico extends javax.swing.JFrame {
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabelFondo;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBarPrincipal;
     private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 
