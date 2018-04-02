@@ -29,6 +29,13 @@ create table dvd(
 	constraint fk_IdElementoDVD foreign key(idElemento) references elemento
 )
 
+create table prueba(
+	idprueba int primary key not null,
+	nombrePrueba VARCHAR(30),
+	apellidoPrueba VARCHAR(30),
+	select *from prueba;
+)
+
 drop table elemento;
 drop table cd;
 drop table dvd;
